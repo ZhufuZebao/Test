@@ -1,0 +1,29 @@
+{
+	"data": [{
+		"id": 1,
+		"start_date": "2018-04-01 00:00:00",
+		"duration": 5,
+		"text": "土木工事",
+		"progress": 0.0,
+		"sortorder": 20,
+		"parent": 0,
+		"open": true
+	}, {
+		"id": 12,
+		"start_date": "2018-04-21 08:34:17",
+		"duration": 18,
+		"text": "木工事",
+		"progress": 0,
+		"sortorder": 10,
+		"parent": 0,
+		"open": true
+	}],
+	"collections": {
+		"links": [{
+			"id": 1,
+			"source": 1,
+			"target": 2,
+			"type": "0"
+		}]
+	}
+}

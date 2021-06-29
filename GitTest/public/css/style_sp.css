@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+    .delet-img .companylist .title-del{
+        top: -60px;
+    }
+
+    .delet-img .title-del{
+        top: -20px;
+    }
+
+    .main-class > div {
+        min-width: 1024px;
+    }
+
+    .el-message-box{
+        max-width: 100%;
+    }
+
+    .el-popover{
+        min-width: 300px !important;
+        max-height: 100vh;
+    }
+    .el-popover.popover-location{
+        top: 0 !important;
+        overflow-y: auto;
+
+    }
+
+    .modalBody, .modalBodyCustomer {
+        width: 100%;
+        max-width: 700px;
+        margin-left: calc((100vw - 700px) / 2) !important;
+        overflow: auto;
+        overflow-y: hidden;
+        left: 0;
+    }
+    .chat-forward .modalBody{
+        margin-left: calc((100vw - 400px) / 2) !important;
+    }
+
+    .modalBody section, .modalBody .modalBodycontent,
+    .project-enterprise .modalBodycontent,
+    .account .modalBodycontent {
+        overflow: auto;
+        min-width: 700px;
+    }
+
+    .chat-forward .modalBody .modalBodycontent{
+        min-width: auto;
+    }
+
+    .project-enterprise .content {
+        min-width: 700px;
+    }
+
+    .modal-close {
+        position: absolute;
+        left: 670px;
+        top: 0;
+        right: 0;
+    }
+    .chat-forward .modal-close{
+        left: 370px;
+    }
+
+    .account-list .content .title-add {
+        position: absolute;
+        top: 10px;
+    }
+
+    .account .modalBodycontent .project-enterprise .content {
+        height: 100%;
+        min-width: 700px;
+    }
+
+    .account .invite-form .customertable .table-scroll {
+        height: 344px;
+    }
+
+    div.el-select-dropdown.el-popper .el-scrollbar .el-scrollbar__wrap {
+        min-width: 120px;
+    }
+
+    .el-tabs {
+        width: 100%;
+    }
+
+    /*--------------------全体の設定page----------------------------*/
+    .low header {
+        position: static;
+        width: 100%;
+        height: 130px;
+        left: 0;
+    }
+    .low h1{
+        min-width: 305px;
+    }
+    .nav-wrapper {
+        position: absolute;
+    }
+
+    .low .title-wrap {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .low h1 a {
+        height: 65px;
+    }
+
+    .user-profile {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .low header::after {
+        position: absolute;
+        float: left;
+        top: 0;
+        left: 306px;
+        border-right: 30px solid transparent;
+        border-bottom: 70px solid #9dc815;
+    }
+
+    .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .common-wrapper, .commonAll > .commonAll, .projectshow .showAll {
+        margin-top: 0;
+    }
+
+    .projectshow .showAll {
+        margin-top: 10px;
+    }
+
+    /*--------------------Project----------------------------*/
+    .projectlist.datapoper.commonAll {
+        height: 100vh;
+    }
+
+    .modalBody .customer-add .customerofficeadd .modalBody{
+        left: 0;
+        margin-left: 0 !important;
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .modalBody .customer-add .customerofficeadd .modalBody .modalBodycontent{
+        height: 100%;
+    }
+
+    /*--------------------customer----------------------------*/
+    .customer.customercreate .modalBody{
+        padding-bottom: 0;
+        border-radius: 0;
+    }
+    .customer.customercreate .modalBody .report-deteil-wrap{
+        margin-bottom: 0;
+        min-width: 700px;
+    }
+
+    .customer .modalBody .report-deteil-wrap{
+        min-width: 400px;
+    }
+
+    .customer .modalBody .report-deteil-wrap .button-wrap{
+        display: flex;
+        justify-content: center;
+    }
+
+    .customere .confirm-content.report-deteil-wrap dl{
+        margin: 20px 5px;
+        width: calc(100% - 10px);
+    }
+
+    .customer .confirm-content .button-lower a {
+        padding: 0 10px;
+    }
+
+    /*--------------------friend----------------------------*/
+    .customerlist .customer-wrapper.invite-form {
+        margin-top: 20px;
+    }
+
+    /*#2339*/
+    .invite-inf {
+        top: -20px;
+    }
+    .list-del .title-del {
+        position: absolute;
+        top: 0;
+        left: 4%;
+    }
+
+    .invite-form .customertable {
+        margin-top: 40px !important;
+    }
+
+    /*--------------------account----------------------------*/
+    .account .modalBodycontent .project-enterprise .content {
+        height: 100%;
+        min-width: 700px;
+    }
+
+    .account .invite-form .customertable .table-scroll {
+        height: 344px;
+    }
+
+    /*--------------------schedule----------------------------*/
+    .schedule .schedule-wrapper.schedule-frist {
+        width: 100%;
+    }
+
+    .schedule .schedule-org-main-top{
+        width: calc(100% - 200px);
+    }
+    .schdule-week.schedule .schedule-org-main-top,
+    .schdule-week .schedule-wrapper.schedule-secont{
+        width: calc(100% - 217px);
+    }
+
+
+    .schedule.schdule-org-week .schedule-org-main-top .schedule-wrapper,
+    .schedule .schedule-wrapper.schedule-secont .schedule-org-main-wrap{
+        width: 100%;
+    }
+
+    .schedule.schdule-org-week .schedule-org-main-top .schedule-frist-top,
+    .schedule.schdule-org-week .schedule-org-main-top .schedule-frist-section,
+    .schedule.schdule-org-week .schedule-org-main-top .schedule-wrapper .schedule-secont.schedule-org-main-wrap{
+        width: calc(1024px - 317px);
+    }
+
+    .schedule .schedule-wrapper.schedule-secont {
+        height: auto !important;
+    }
+
+    /*--------------------chat----------------------------*/
+    .low .chat header {
+        height: 70px;
+    }
+
+    .chat .user-profile {
+        z-index: 0;
+    }
+
+    .chat .el-tabs {
+        position: relative;
+    }
+
+    .chat .el-tabs .el-tabs__content, .chat .el-tabs .ChatContactPage .common-view {
+        position: static;
+        overflow: visible;
+    }
+
+    .chat .el-tabs .chat-list-tabs, .chat .el-tabs .ChatContactPage .common-view .el-tabs__content {
+        position: relative;
+        top: 60px;
+    }
+
+    .chat .chat-list-tabs .chatcontent {
+        width: calc(100% - 300px);
+        float: right;
+    }
+
+    .chat .el-tabs--card > .el-tabs__header {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .chat .chatbuttom {
+        position: absolute;
+        top: 0;
+        left: calc(300px + 10%);
+        min-width: 240px;
+    }
+
+    .chat .chatcontent {
+        width: calc(100% - 300px);
+        min-height: 650px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .chat .chatcontent .rowlast .chatcontentbuttom {
+        position: relative;
+        left: 0;
+        width: 100% !important;
+    }
+
+    .chat .chatcontent .rowsecond li {
+        width: calc(100% - 80px);
+        padding-bottom: 35px;
+    }
+
+    .chat .chatcontent .rowsecond {
+        min-height: 430px;
+        height: calc(100vh - 350px);
+    }
+
+    .chat .chat-list-tabs {
+        height: calc(100% - 130px);
+    }
+
+    .chat .chat-list-tabs .el-tabs {
+        position: relative;
+    }
+
+    .chat .el-tabs--left .el-tabs__header.is-left, .chat .ChatContactPage,
+    .ChatContactPage .chatpersonContent {
+        min-height: 650px;
+    }
+
+    .chat .chat-list-tabs .chat-add img {
+        position: absolute !important;
+        left: 180px !important;
+        top: 560px;
+        bottom: 0 !important;
+    }
+
+
+    .chat-model .el-popover {
+        left: calc(50vw - 200px);
+        width: 100%;
+        max-width: 400px;
+        overflow: auto;
+    }
+
+    .chat .taskcontent .el-radio-group {
+        position: absolute;
+        top: 40px;
+    }
+
+    .chat .taskcontent .chatcontent {
+        position: absolute;
+        width: calc(100% - 300px);
+        left: 300px;
+        top: 0;
+    }
+
+    .chat .taskcontent .el-tabs--left, .el-tabs--right {
+        overflow: visible;
+    }
+
+    .chat .chatTaskFlow.el-tabs--left .el-tabs__header.is-left {
+        min-height: 570px;
+        top: 80px;
+    }
+    .chat .chatfile-content.chat-list-tabs .el-tabs{
+        top:26px;
+    }
+
+    .ChatContactPage .chatcontent {
+        position: absolute;
+        left: 300px;
+        top: 0;
+    }
+
+    .ChatContactPage .el-tabs__content {
+        min-height: 650px;
+        display: flex;
+    }
+
+    .ChatContactPage .contactcontent.ChatContactPageadd {
+        width: calc(100% - 300px);
+        margin-left: 0;
+        top: 0;
+    }
+    /*#2005*/
+    /*.chat .ChatContactPage .chatcontent .rowsecond {*/
+        /*height: calc(100% - 130px);*/
+    /*}*/
+
+    .chat .title-wrap .title-add {
+        position: relative;
+        top: 10px;
+        right: 18%;
+    }
+
+    .chat .taskcontent {
+        margin-top: -26px;
+    }
+
+    .chat .add-chat-contants-wrap .talk-item-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .chat .ChatContactPage .contactcontent.ChatContactPageadd .rowsecond li{
+        padding-bottom: 10px;
+    }
+    .chat .ChatContactPage table{
+        width: 544px;
+        min-width: 544px;
+        margin-bottom: 30px;
+    }
+
+    /*--------------------project-enterprise----------------------------*/
+
+    .project-enterprise .modalBodycontent {
+        max-height: 80vh;
+    }
+
+    /*--------------------schedule----------------------------*/
+    .schedule-show{
+        max-width: 100%;
+    }
+    .schedule-modal .schedule-modalBodycontent dl{
+        position: relative;
+    }
+
+    .schedule-modal .schedule-modalBodycontent .popoverto-input{
+        top: 0;
+    }
+}
+
+/*--------------------report----------------------------*/
+.report .list-del .title-del{
+    top: 30px;
+}
+
+@media (max-width: 700px) {
+    .modalBody, .modalBodyCustomer {
+        margin-left: 0 !important;
+        left: calc(50vw - 50%);
+    }
+    .chat-forward .modalBody, .modalBodyCustomer{
+        margin-left: calc(50vw - 200px) !important;
+        left: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .chat-model .el-popover {
+        left: 0;
+    }
+
+}

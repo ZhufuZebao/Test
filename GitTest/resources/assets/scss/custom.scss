@@ -1,0 +1,14 @@
+@import "~element-ui/packages/theme-chalk/src/mixins/mixins";
+
+@include b(form-item) {
+  @include when(required) {
+    @include pseudo('not(.is-no-asterisk)') {
+      & > .el-form-item__label:before,
+      & .el-form-item__label-wrap > .el-form-item__label:before {
+        content: '※';
+        color: #A9A9AB;
+        margin-right: 4px;
+      }
+    }
+  }
+}

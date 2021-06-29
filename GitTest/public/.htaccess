@@ -1,0 +1,36 @@
+Options +SymLinksIfOwnerMatch
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    ######## sakura server #######
+    #RewriteBase /shokunin/
+    RewriteBase /shokunin/
+    RewriteRule !\.(woff|woff2|ttf|js|ico|gif|jpg|jpeg|png|css|html|pdf|apk|inc.php)$ index.php [NC]
+
+    ######## Handle file view & download #######
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^file/.* index.php
+    RewriteRule ^download/.* index.php
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    ######## AWS server #######
+    ## Redirect Trailing Slashes If Not A Folder...
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_URI} (.+)/$
+    #RewriteRule ^ %1 [L,R=301]
+
+    ## Handle Front Controller...
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteRule ^ index.php [L]
+
+</IfModule>
+

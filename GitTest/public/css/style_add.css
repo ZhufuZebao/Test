@@ -1,0 +1,347 @@
+.l-login-wrapper.promisor .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.l-login-wrapper.promisor h1{
+    margin:0!important;
+}
+
+.l-login-wrapper.promisor .title_span{
+    font-size: 60px;
+    margin-left: 20px;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+td.avatar{
+    padding-top: 12px;
+}
+
+.avatar img{
+    width: 26px;
+    min-width: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 26px;
+    object-fit: contain;
+}
+.largavatar img{
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/*-----------------------------notice----------------------------*/
+.notice.customerlist .customertable{
+padding-bottom: 0;
+}
+.notice .customer-li{
+    width: 20%;
+}
+.notice .customer-li:first-child{
+    width: 40%;
+}
+
+.noticeCreat .el-input--prefix .el-input__inner{
+    padding-left: 40px;
+}
+.noticeCreat .el-date-editor span.el-input__prefix i{
+    margin-top: 5px;
+}
+.noticeCreat .ql-editor{
+    min-height: 150px;
+}
+.noticeCreat .pro-button{
+    text-align: center;
+}
+
+/*-----------------------------worker----------------------------*/
+
+.customerlist .workerlist .report-serch li{
+    box-sizing: border-box;
+}
+
+.customerlist.contract2 .workerlist li.btns > span{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.customerlist .workerlist .report-serch li:nth-child(1),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(1){
+    width: 22%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(2),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(2){
+    width: 6%;
+}
+.customerlist.worker2 .workerlist li.btns > span:nth-child(2) img{
+    width: 26px;
+    min-width: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 26px;
+    object-fit: contain;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(3),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(3){
+    width: 6%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(4),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(4){
+    width: 6%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(5),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(5){
+    width: 11%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(6),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(6){
+    width: 17%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(7),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(7){
+    width: 12%;
+}
+
+.customerlist .workerlist .report-serch li:nth-child(8),
+.customerlist.worker2 .workerlist li.btns > span:nth-child(8){
+    width: 20%;
+}
+
+.customerlist.worker2 .workerlist li.btns > span .btn-li,
+.notice .edit-a a{
+    background-color: #5dd5d1;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 5px;
+    margin-right: 10px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    height: 1.6em;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor:pointer;
+}
+.workerBlock >h3{
+    text-align: center;
+    color: #219894 ;
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.workerBlock-tb{
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.workerBlock-tb tr:nth-child(2n){
+    background: #F2F2F2;
+}
+.workerBlock-tb tr{
+    background: #D1D1D1;
+    overflow: hidden;
+    line-height: 50px;
+    height: 50px;
+}
+
+.workerBlock-tb td:first-child{
+    width: 40%;
+}
+.workerBlock-tb td{
+    width: 30%;
+    text-align: center;
+}
+.workerBlock-tb .tb-img{
+    width: 26px;
+    min-width: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 26px;
+    object-fit: contain;
+}
+.workerBlock-text{
+    display: flex;
+    justify-content: space-between;
+}
+.worker .content>a>span{
+    margin-top: 10px;
+}
+.commonAll.workerBlock .pro-button .modoru{
+    width: 48%;
+}
+.workerBlock .pro-button{
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+}
+/*-----------------------------contract----------------------------*/
+.contract2 .table-scroll{
+    height: calc(100vh - 262px);
+    overflow-y: auto;
+}
+
+.customerlist.contract2 .customer-wrapper .tablelisthover li,
+.customerlist.worker2 .customer-wrapper .tablelisthover li{
+    border-bottom:1px solid #E5E5E5;
+}
+
+.customerlist.contract2 .report-serch li{
+    box-sizing: border-box;
+}
+
+.customerlist.contract2 li.btns > span,.customerlist.worker2 li.btns > span{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 0px;
+}
+.customerlist.contract2 .report-serch li:nth-child(1),
+.customerlist.contract2 li.btns > span:nth-child(1){
+    width: 22%;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(2),
+.customerlist.contract2 li.btns > span:nth-child(2){
+    width: 6%;
+}
+.customerlist.contract2 li.btns > span:nth-child(2) img{
+    width: 26px;
+    min-width: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 26px;
+    object-fit: contain;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(3),
+.customerlist.contract2 li.btns > span:nth-child(3){
+    width: 12%;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(4),
+.customerlist.contract2 li.btns > span:nth-child(4){
+    width: 12%;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(5),
+.customerlist.contract2 li.btns > span:nth-child(5){
+    width: 12%;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(6),
+.customerlist.contract2 li.btns > span:nth-child(6){
+    width: 14%;
+}
+
+.customerlist.contract2  .report-serch li:nth-child(7),
+.customerlist.contract2 li.btns > span:nth-child(7){
+    width: 22%;
+}
+
+
+
+.customerlist.contract2 li.btns > span.edit-a a{
+    background-color: #5dd5d1;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 5px;
+    margin-right: 10px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    height: 1.6em;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.customerlist.contract2 .customer-wrapper li.btns > span，.customerlist.worker2 .customer-wrapper li.btns > span{
+    border-bottom: 0px!important;
+}
+.customerlist.worker2 .customer-wrapper .tablelisthover li,.customerlist.contract2 .customer-wrapper .table-scroll li{
+    border-bottom:1px solid #E5E5E5;
+}
+.customerlist.worker2 .customer-wrapper .tablelisthover li:last-child,
+.customerlist.contract2 .customer-wrapper .table-scroll li:last-child{
+    border-bottom:0;
+}
+.customerlist.worker2 .customertable,.customerlist.contract2 .customertable{
+    padding-bottom: 0!important;
+}
+
+.contractlab .el-tabs__nav-wrap{
+    z-index: 0;
+}
+
+.contractlab table{
+    table-layout: fixed;
+}
+
+.contractlab table tr:after{
+    display: none;
+}
+.contractlab table tr td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contract .content>ul,
+.worker .content>ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contract .content>ul h3,
+.worker .content>ul h3{
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .l-login-wrapper .main{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .l-login-wrapper .title_span{
+        font-size: 2rem;
+        margin-left: 0px;
+        text-align:center;
+    }
+}
+@media screen and (max-width: 750px) {
+    .l-login-wrapper .main{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .l-login-wrapper .title_span{
+        font-size: 2rem;
+        margin-left: 0px;
+        text-align:center;
+    }
+}

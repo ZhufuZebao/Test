@@ -1,0 +1,2 @@
+<task><pID>{{ $item->id }}</pID><pName>{{ $item->name }}</pName><pStart>{{ $item->st_date }}</pStart><pEnd>{{ $item->ed_date }}</pEnd><pClass>{{ $color }}</pClass><pLink></pLink><pMile>0</pMile><pRes></pRes><pComp>0</pComp><pGroup>1</pGroup><pParent>{{ $item->parent_id }}</pParent><pOpen>1</pOpen><pDepend>{{ $item->depends->implode('src_id') }}</pDepend></task>\
+<?php foreach($item->children as $c): ?>@include('task/_jsgantt',['item' => $c, 'color' => 'gtaskblue'])<?php endforeach ?>

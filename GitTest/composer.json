@@ -1,0 +1,59 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "7.*",
+        "aws/aws-sdk-php": "~3.0",
+        "davejamesmiller/laravel-breadcrumbs": "5.*",
+        "dhtmlx/connector-php": "^3.0",
+        "doctrine/dbal": "^2.9",
+        "fideloper/proxy": "~4.0",
+        "google/apiclient": "^2.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/redis": "5.8.*",
+        "intervention/image": "^2.4",
+        "japanese-date/japanese-date": "^5.1",
+        "laravel/framework": "5.8.*",
+        "laravel/passport": "4.0.3",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.4",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "maatwebsite/excel": "^3.0",
+        "niklasravnsborg/laravel-pdf": "^2.0",
+        "predis/predis": "^1.0",
+        "spatie/pdf-to-image": "^2.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "app/helpers.php",
+            "app/Helper/ApiHelper.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

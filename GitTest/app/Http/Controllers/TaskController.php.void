@@ -1,0 +1,159 @@
+<?php
+/**
+ * 工程管理ページのコントローラー
+ *
+ * @author  Miyamoto
+ */
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+//use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+//use Request;
+use DB;
+use App\Contractor;
+use App\Task;
+use App\TaskDepend;
+
+use Session;
+
+/**
+ * 工程管理
+ */
+class TaskController extends Controller
+{
+    /**
+     * コンストラクタ
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * 工程管理のトップページ
+     * action: GET
+     */
+    public function index()
+    {
+        $tasks = Task::where('parent_id', null)
+                     ->get();
+
+        return view('/task/index', [
+            'tasks' => $tasks,
+        ]);
+    }
+
+    public function sample()
+    {
+        $tasks = Task::where('parent_id', null)
+                     ->get();
+
+        return view('/task/anychart', [
+            'tasks' => $tasks,
+        ]);
+    }
+
+    /**
+     * 新規作成
+     * action: GET
+     */
+    public function create()
+    {
+        $model = new Task();
+
+        return view('/task/_form', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * 子タスク追加
+     * action: GET
+     */
+    public function append($id)
+    {
+        $model  = new Task();
+
+        $model->parent_id = $id;
+
+        return view('/task/_form', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * 依存関係を追加
+     * action: GET
+     */
+    public function depend($sid/*integer*/, $did/*integer*/)
+    {
+        $src = Task::find($sid);
+        $dst = Task::find($did);
+
+        $model = TaskDepend::where(['src_id'=>$sid,'dst_id'=>$did])->first();
+
+        return view('/task/depend', [
+            'src'   => $src,
+            'dst'   => $dst,
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * 依存関係を追加
+     * action: GET
+     */
+    public function undepend($id)
+    {
+        $model = TaskDepend::find($id);
+        $model->delete();
+
+        return "削除されました";
+    }
+
+    /**
+     * 編集
+     * action: GET
+     */
+    public function edit($id)
+    {
+        $model = Task::find($id);
+
+        return view('/task/_form', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * 新規作成
+     * action: POST
+     */
+    public function store(Request $request)
+    {
+        $result = Task::validator($request->all())
+                      ->validate();
+
+        Task::create($request->all());
+
+        return redirect()->route('task');
+    }
+
+    /**
+     * 編集
+     * action: POST
+     */
+    public function update($id, Request $request)
+    {
+        $result = Task::validator($request->all())
+                      ->validate();
+
+        $model = Task::find($id);
+        $model->update($request->all());
+
+        return redirect()->route('task');
+    }
+
+}

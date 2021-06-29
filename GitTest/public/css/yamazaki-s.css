@@ -1,0 +1,729 @@
+﻿@charset "utf-8";
+
+/*---------------------------------------------------------------------------
+   共通
+---------------------------------------------------------------------------*/
+
+.inner {
+	width: 100%;
+}
+
+.overview {
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+
+/*---------------------------------------------------------------------------
+   header
+---------------------------------------------------------------------------*/
+
+header h1,
+.low header .logo {
+	margin-left: 10px;
+}
+
+header h1 a,
+.low header .logo a {
+	width: 100px;
+	height: 25px;
+}
+
+header nav {
+	display: none;
+}
+
+
+/*top-menu 
+---------------------------------------------------------------------------*/
+
+header #top-menu {
+	margin: 0;
+	width: 100%;
+	display: inline;
+	position: relative;
+}
+
+header #top-menu .menu {
+	margin: 10px 10px 0 0;
+	width: 25px;
+	height: 20px;
+	background-image: url(../images/menu-bar.png);
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: right;
+	cursor: pointer;
+}
+
+header .sb-right ul {
+	padding: 0 10px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 999;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+header .sb-right li {
+	text-align: left;
+	border-bottom: 1px solid rgba(0,81,145,0.3);
+}
+
+header .sb-right li a {
+	padding: 10px 20px;
+	display: block;
+}
+
+header .sb-right li:hover {
+	text-decoration: none;
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+header .js-menu, .js-search {
+	padding: 0;
+	width: 100%;
+	height: auto;
+	display: none;
+	clear: both;
+}
+
+header .js-menu2, .js-search {
+	padding: 0;
+	width: 100%;
+	height: auto;
+	display: none;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+header .illustration-area {
+	clear: both;
+	margin: 0 auto;
+	width: 300px;
+	height: 390px;
+}
+
+header #home {
+	width: 150px;
+	height: 150px;
+	left: 0;
+	top: 50px;
+}
+
+header #check-box,
+header #check{
+	width: 250px;
+	height: 250px;
+	left: 60px;
+	top: -30px;
+}
+
+header #illust {
+	width: 50px;
+	height: 50px;
+	left: 160px;
+	top: 10px;
+}
+
+header #logo {
+	display: block;
+	margin: 0 auto;
+	width: 280px;
+	height: 70px;
+	top: 200px;
+	left: 0;
+}
+
+header #supervision {
+	font-size: 0.8em;
+	width: 280px;
+	left: 20px;
+	top: 180px;
+	display: block;
+}
+
+header .button.trial {
+	display: none;
+}
+
+header .button {
+	width: 100%;
+	right: 0;
+	bottom: 50px;
+}
+
+header .button a {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	width: 280px;
+	font-size: 1.6em;
+	position: relative;
+}
+
+header .button a span {
+	font-size: 12px;
+}
+
+header .button a:after {
+	margin: -20px 0 0 0;
+	width: 40px;
+	height: 40px;
+	background-size: 20px auto;
+	left: 10px;
+}
+
+header .bottom-area {
+	padding: 50px 0 30px 0;
+	background-size: auto 100%;
+}
+
+header .bottom-area .catch-e {
+	font-size: 28px;
+	line-height: 1em;
+}
+
+header .bottom-area .catch {
+	margin: 20px 0 0 0;
+	padding: 0 10px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+header .bottom-area br {
+	display: inline;
+}
+
+header #login {
+	margin: 0 0 0 -70px;
+	right: 50%;
+	bottom: 0;
+}
+
+header #login a {
+	padding: 2px 0 0 12px;
+	width: 140px;
+	font-size: 14px;
+	line-height: 1em;
+	background-size: 10px auto;
+	background-position: 2px center;
+}
+
+header .notes {
+	width: 270px;
+	right: 10px;
+	bottom: 20px;
+}
+
+header .notes a {
+	text-decoration: none;
+}
+
+header .notes a > span {
+	position: static;
+}
+
+header .notes a > span:after {
+	border: 10px solid transparent;
+	border-top: 20px solid rgba(0,0,0,0.8);
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	position: absolute;
+	top: 100%;
+	right: 30px;
+}
+
+header .notes a:hover > span {
+	width: 100%;
+}
+
+header .bottom-area .trademark {
+	font-size: 0.7em;
+	right: 10px;
+	bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------------------
+   section
+---------------------------------------------------------------------------*/
+
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
+section {
+	padding: 30px 10px 50px 10px;
+}
+
+h2,
+.low h1 {
+	margin: -20px 0 0 10px;
+	height: 50px;
+	font-size: 26px;
+	position: static;
+}
+
+h2 .first-letter,
+.low h1 .first-letter {
+	margin: -30px 10px 0 0;
+	width: 80px;
+	height: 80px;
+	font-size: 80px;
+	line-height: 80px;
+}
+
+.low .faq h1 .first-letter {
+	font-size: 70px;
+	line-height: 70px;
+}
+
+h2 .jp,
+.low h1 .jp {
+	margin: 10px 0 0 80px;
+	font-size: 16px;
+}
+
+
+/*---------------------------------------------------------------------------
+   about
+---------------------------------------------------------------------------*/
+
+section.about div.inner {
+	padding: 0 0 50px 0;
+	background-image: none;
+}
+
+.about h2 .first-letter,
+.low.about h1 .first-letter {
+	line-height: 70px;
+}
+
+.about p {
+	width: 100%;
+	line-height: 1.8em;
+}
+
+.about .more {
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+
+/*---------------------------------------------------------------------------
+   function
+---------------------------------------------------------------------------*/
+
+section.function li {
+	margin: 20px 0 0 0;
+	width: 100%;
+	height: 50px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	clear: both;
+}
+
+section.function li a {
+	width: 100%;
+	height: 50px;
+}
+
+section.function li:nth-child(odd) {
+	margin-right: 0;
+	text-align: left;
+	background-position: left center!important;
+}
+
+section.function li:nth-child(even){
+	margin-left: 0;
+	background-position: left center;
+}
+
+section.function li:nth-child(odd) a,
+section.function li:nth-child(even) a{
+	padding: 0 0 0 60px;
+}
+
+section.function li a:before {
+	margin: -25px 0 0 0;
+	width: 50px;
+	height: 50px;
+	top: 50%;
+}
+
+section.function li:nth-child(odd) a:before,
+section.function li:nth-child(even) a:before {
+	left: 0;
+}
+
+section.function li a:after {
+	background-size: 30px auto;
+}
+
+section.function li:nth-child(odd) a:after,
+section.function li:nth-child(even) a:after {
+	margin: -25px 0 0 0;
+	width: 50px;
+	height: 50px;
+	left: 0;
+}
+
+.function .more a {
+	margin: 10px 0 0 0;
+}
+
+
+
+/*---------------------------------------------------------------------------
+   plan_pricing
+---------------------------------------------------------------------------*/
+
+.plan_pricing .more a {
+	margin: 30px 0 0 0;
+	position: static;
+}
+
+.plan_pricing .more a:before {
+	margin: 0;
+}
+
+.plan_pricing li {
+	padding: 0 0 0 70px;
+	width: 100%;
+	height: auto;
+	clear: both;
+	background-size: 70px auto;
+}
+
+.plan_pricing li .plan {
+	margin: 10px 30px 0 0;
+	text-align: right;
+}
+
+
+/*---------------------------------------------------------------------------
+   user-voice
+---------------------------------------------------------------------------*/
+
+.user-voice li {
+	margin: 20px 0;
+	font-size: 1em;
+	background-size: auto 60px;
+}
+
+.user-voice li:nth-child(odd) {
+	padding: 0 0 0 62px;
+	background-position: left top;
+}
+
+.user-voice li:nth-child(even) {
+	padding: 0 62px 0 0;
+	background-position: right top;
+}
+
+
+/*---------------------------------------------------------------------------
+   footer
+---------------------------------------------------------------------------*/
+
+footer {
+	padding: 0;
+}
+
+footer .logo {
+	padding: 0;
+	width: 100%;
+}
+
+footer .logo a {
+	width: 100%!important;
+	background-size: 200px 50px!important;
+	background-position: center center!important;
+}
+
+footer .footer-nav {
+	padding: 10px 0 0 0;
+	clear: both;
+}
+
+footer .footer-nav ul {
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+footer .footer-nav li {
+	margin: 0;
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	clear: both;
+}
+
+footer .footer-nav li a {
+	padding: 0 20px;
+	position: relative;
+}
+
+footer .footer-nav li a:after {
+	content: "";
+	margin: -5px 0 0 0;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	border-top: 1px solid rgba(255,255,255,0.3);
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	right: 20px;
+}
+
+footer .footer-nav li:nth-child(7),
+footer .footer-nav li:nth-child(8),
+footer .footer-nav li:nth-child(9),
+footer .footer-nav li:nth-child(10),
+footer .footer-nav li:nth-child(11) {
+	border: 0;
+}
+
+footer .footer-nav li:nth-child(7) a,
+footer .footer-nav li:nth-child(11) a {
+	margin: 10px auto 0 auto;
+	padding: 0 10px 0 30px;
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.1);
+	background-size: 20px auto;
+	background-position: 10px center;
+}
+
+footer .footer-nav li:nth-child(8) a,
+footer .footer-nav li:nth-child(10) a {
+	padding: 0;
+	text-align: center;
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.5);
+}
+
+footer .footer-nav li:nth-child(8) a:after {
+	display: none;
+}
+
+footer .footer-nav li:nth-child(9) {
+	clear: both;
+}
+
+footer .footer-nav li:nth-child(9) a {
+	margin: 10px auto 0 auto;
+	padding: 0 10px 0 30px;
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+footer .footer-nav li:nth-child(9) a:after {
+	content: "";
+	margin: -15px 0 0 0;
+	width: 30px;
+	height: 30px;
+	background-size: 20px auto;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+footer copy {
+	margin: 20px 0 0 0;
+	width:100%;
+	font-size: 0.8em;
+	text-align: center;
+	display: block;
+	clear: both;
+}
+
+.top a {
+	width: 50px;
+	height: 50px;
+	background-size: 40px auto;
+	bottom: 10px;
+	right: 10px;
+}
+
+/*---------------------------------------------------------------------------
+   low
+---------------------------------------------------------------------------*/
+
+.low section {
+	padding: 30px 10px;
+}
+
+.low header {
+	height: 42px;
+}
+
+.low h1 {
+	margin: -10px 0 0 0;
+	color: #ffffff;
+
+}
+
+.low .outline {
+	width: 100%;
+}
+
+.low section .inner > div {
+	margin: 20px 0 0 0;
+	width: 100%;
+	clear: both;
+}
+
+/*-about-*/
+
+.low.about .about div.inner {
+	padding: 0 0 30px 0;
+	background-image: none;
+}
+
+.low.about h2 {
+	margin: 10px 0 0 -100px;
+	left: 50%;
+}
+
+.low.about img.about-img {
+	display: block;
+	margin: 20px auto 0 auto;
+	width: 80%;
+	max-width: 680px;
+}
+
+
+/*-function-*/
+
+.low.function .overview .line {
+	margin: 0;
+	width: 1px;
+	height: 10px;
+	border-top: 0;
+}
+
+.low.function .overview .line:after {
+	content: "。";
+}
+
+.low.function > section.function > div.inner {
+	background-image: none;
+}
+
+.low.function .icon {
+	margin: 10px 0 0 -100px;
+	clear: both;
+	left: 50%;
+}
+
+.low.function h2 {
+	margin: 0;
+	height: auto;
+	font-size: 30px;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+.low.function h3 {
+	margin: 20px 0 0 0;
+}
+
+.low .about-t ol {
+	margin: 50px 0 0 0;
+}
+
+.low .about-t li {
+	margin: 0 0 50px 0;
+	min-height: 120px;
+	line-height: 1.4em;
+	background-color: #efecdc;
+	background-position: 99% center;
+	background-repeat: no-repeat;
+	background-size: auto 110px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.low.function ol li {
+	margin: 0 0 5px 0;
+	padding: 10px;
+	width: 100%;
+	border: 0;
+	clear: both;
+}
+
+.low.function ol li img {
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 260px;
+	height: auto;
+}
+
+.low.function ol li:nth-child(7) {
+	width: 100%;
+}
+
+
+/*-plan_pricing-*/
+
+.plan_pricing-table table {
+	display: none;
+}
+
+.plan_pricing-table dl {
+	display: block;
+}
+
+
+/*-faq-*/
+
+.low .about-t li {
+	margin: 0 0 20px 10px;
+	background-position: center 96%;
+	background-size: auto 90px;
+}
+
+.low .about-t li:after {
+	content: "";
+	margin: 0 0 0 -20px;
+	border: 20px solid transparent;
+	border-top: 20px solid #efecdc;
+}
+
+.low .about-t li:nth-child(1) ,
+.low .about-t li:nth-child(2),
+.low .about-t li:nth-child(3) {
+	padding: 20px 10px 100px 10px;
+}
+
+.low .about-t li:nth-child(4) {
+	padding: 20px;
+	text-align: left;
+	line-height: 1.4em;
+}
+
+.low .about-t li span {
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	line-height: 50px;
+	position: absolute;
+	left: -10px;
+	top: -30px;
+}
