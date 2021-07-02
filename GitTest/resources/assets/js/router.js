@@ -61,6 +61,7 @@ const dashboardList = () => import(/* webpackChunkName: 'chunk/dashboard' */ './
 const SysNoticeDetail = () => import(/* webpackChunkName: 'chunk/sysNotice' */ './pages/dashboard/dashboardSysNoticeDetail.vue')
 const ProjectDetails = () => import(/* webpackChunkName: 'chunk/project' */ "./pages/project/ProjectDetails.vue")
 const TestView = () => import('./pages/TestView.vue')
+const TestLearn = () => import('./pages/TestLearn.vue')
 Vue.use(VueRouter);
 
 // パスとコンポーネントのマッピング
@@ -73,6 +74,10 @@ const routes = [
     path: '/nav',
     component: Navigation,
     children: [
+      {
+        path: '/TestLearn',
+        component: TestLearn
+      },
 
       {
         path: '/dashboard',

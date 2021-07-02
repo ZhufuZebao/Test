@@ -73,6 +73,7 @@
 
 <script>
     export default {
+        name : "TestView",
         data() {
             return {
                 user: '',
@@ -151,6 +152,10 @@
 
             },
             updated(id){
+                if(this.updateUser.length == 0 || this.updateSex == 0 || this.updateLike == 0){
+                    alert("修改的输入框中不能为空");
+                    return;
+                }
                 let updateData = {
                     update:id,
                     updateUser:this.updateUser,

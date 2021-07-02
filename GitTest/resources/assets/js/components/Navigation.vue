@@ -21,8 +21,11 @@
             <router-link to="/customer" class="customer">施主</router-link>
           </li>
           <li>
-            <router-link to="/TestView" class="customer">Test</router-link>
+            <router-link to="/TestLearn" class="customer">练习</router-link>
           </li>
+          <!--<li>
+            <router-link to="/TestView" class="customer">Test</router-link>
+          </li>-->
           <!--<li><router-link to="/foobar" class="process">工程</router-link></li>-->
           <!--<li><router-link to="/report" class="report">日報</router-link></li>-->
           <!--<li><router-link to="/document" class="document">書類</router-link></li>-->
