@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Models\TestLearn;
+use http\Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
@@ -20,16 +21,21 @@ class TestLearnController extends Controller {
                 'message' => $checkResult->errors()
             ];
         }else{
-
             $datas = new TestLearn();
             $datas->name = $request->get('name');
             $datas->mobile = $request->get('mobile');
             $datas->email = $request->get('email');
-            if($datas->save()){
-                return [
-                    'status' => 'success',
-                ];
+            try {
+                if($datas->save()){
+                    return [
+                        'status' => 'success',
+                    ];
+                }
+
+            }catch (\Exception $e){
+                Log::error($e->getMessage());
             }
+
             return [
                 'status' => 'error',
             ];
