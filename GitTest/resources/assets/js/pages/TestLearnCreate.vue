@@ -89,6 +89,9 @@
                         if(status == 'success'){
                             window.location.reload();
                         }
+                        if(status == 'error'){
+                            alert('保存失败')
+                        }
 
 
 

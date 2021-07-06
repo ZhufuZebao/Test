@@ -192,6 +192,10 @@ __webpack_require__.r(__webpack_exports__);
         if (status == 'success') {
           window.location.reload();
         }
+
+        if (status == 'error') {
+          alert('保存失败');
+        }
       }); //}
     }
     /*nameBlur(){
